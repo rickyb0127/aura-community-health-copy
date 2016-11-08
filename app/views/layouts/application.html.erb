@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AuraMolly</title>
+  <title>AuraCommunityHealth</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -18,20 +18,33 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">Brand</a>
+        <a class="navbar-brand" href="/">Home</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="#">About Molly</a></li>
-          <li><a href="#">Contact Info</a></li>
-          <li><a href="#">Doula</a></li>
-          <li><a href="#">Resources</a></li>
-          <li><a href="#">Sample Birth Plan</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Yoga</a></li>
+          <li><a href="/about">About Molly</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Women's Support <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Childbirth Prep/Coaching</a></li>
+              <li><a href="#">Childbirth Education</a></li>
+              <li><a href="#">Doula</a></li>
+            </ul>
+          </li>
+          <li><a href="/yoga">Yoga</a></li>
           <li><a href="/nutrition">Nutrition</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Sample Birth Plan</a></li>
+              <li><a href="#">What is a Doula?</a></li>
+              <li><a href="#">Readings</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="/contact">Contact Info</a></li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
