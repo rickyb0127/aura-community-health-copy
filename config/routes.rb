@@ -8,4 +8,5 @@ Rails.application.routes.draw do
   get '/childbirth_education', to: 'childbirth_education#index'
   get '/doula', to: 'doula#index'
   get '/readings', to: 'readings#index'
+  get '/sample_birth_plan', to: 'sample_birth_plan#index'
 end
