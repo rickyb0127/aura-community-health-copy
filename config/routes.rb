@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   root 'welcome#index'
-  get '/nutrition', to: 'nutrition#index'
   get '/yoga', to: 'yoga#index'
   get '/contact', to: 'contact#index'
   get '/about', to: 'about#index'
@@ -9,4 +8,7 @@ Rails.application.routes.draw do
   get '/doula', to: 'doula#index'
   get '/readings', to: 'readings#index'
   get '/sample_birth_plan', to: 'sample_birth_plan#index'
+  get '/purium_health_products', to: 'purium_health_products#index'
+  get '/transformation_program', to: 'transformation_program#index'
+  get '/events', to: 'events#index'
 end
