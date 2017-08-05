@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   get '/purium_health_products', to: 'purium_health_products#index'
   get '/transformation_program', to: 'transformation_program#index'
   get '/events', to: 'events#index'
+  get '/testimonials', to: 'testimonials#index'
 end
